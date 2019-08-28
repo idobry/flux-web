@@ -4,21 +4,23 @@
 FROM library/golang as builder
 
 ENV APP_DIR $GOPATH/src/flux-web
+ENV GO111MODULE=on
+
 RUN mkdir -p $APP_DIR
 
 WORKDIR $GOPATH/src/flux-web
 
-ADD go.mod .
-ADD go.sum .
+COPY go.mod .
+COPY go.sum .
 
 RUN go mod download
 
-ADD . $APP_DIR
+COPY . $APP_DIR
 
-RUN GO111MODULE=on CGO_ENABLED=0 go build -ldflags '-w -s' -o /flux-web && \
-    cp -r views/ /views && \
-    cp -r static/ /static  && \
-    cp -r conf/ /conf
+RUN CGO_ENABLED=0 go build -ldflags '-w -s' -o /flux-web && \
+	cp -r views/ /views && \
+	cp -r static/ /static  && \
+	cp -r conf/ /conf
 #
 # Stage 2
 #
