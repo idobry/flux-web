@@ -1,7 +1,7 @@
 package main
 
 import (
-	"flux-web/controllers"
+	"github.com/idobry/flux-web/controllers"
 
 	"github.com/astaxie/beego"
 )

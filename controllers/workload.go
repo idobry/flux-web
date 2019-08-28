@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"flux-web/models"
+	"github.com/idobry/flux-web/models"
 
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/httplib"
