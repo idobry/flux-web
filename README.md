@@ -1,4 +1,4 @@
-#**THIS REPO IS DEPRECATED, please navigato to https://github.com/flux-web/flux-web**
+#*THIS REPO IS DEPRECATED, please refer to https://github.com/flux-web/flux-web*
 # flux-web
 [![HitCount](http://hits.dwyl.io/idobry/flux-web.svg)](http://hits.dwyl.io/idobry/flux-web) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues) [![Go Report Card](https://goreportcard.com/badge/github.com/idobry/flux-web)](https://goreportcard.com/report/github.com/idobry/flux-web)
 
